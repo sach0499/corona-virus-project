@@ -107,6 +107,6 @@ const updateDB = async () => {
   // process.exit();
 };
 
-//updateDB();
+updateDB();
 
 module.exports = updateDB;
