@@ -6,15 +6,13 @@ import * as helper from "./helper.mjs";
 
 export const renderTopStuff = async (history) => {
   try {
-    const recentHistory = history.data.aggregatedData;
+    console.log(history)
+    const recentHistory = history.aggregateData;
     // const timeStamp = history.createdOn;
     // domElements.timeStampInfo.innerText = `( last updated on ${timeStamp}. Also includes foreign nationals. )`;
 
-    domElements.activeNumbers.innerText = (
-      recentHistory.activeCases
-    ).toLocaleString();
-
-    domElements.curedNumbers.innerText = recentHistory.totalCured.toLocaleString();
+    domElements.activeNumbers.innerText = recentHistory.totalActive.toLocaleString();
+    domElements.curedNumbers.innerText = recentHistory.totalRecovered.toLocaleString();
     domElements.deathNumbers.innerText = recentHistory.totalDeaths.toLocaleString();
     domElements.migratedNumbers.innerText = 1;
   } catch (err) {
