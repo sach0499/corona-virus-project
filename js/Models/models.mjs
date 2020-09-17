@@ -1,11 +1,8 @@
 // this will provide two functions that import the statesdata and history data
 
-// /api/v1/history
-// /api/v1/states?sort=something
+export const getStatesData = async (sortProperty = "name") => {
+  const endpoint = `https://covindappbackend.herokuapp.com/api/v1/states?sort=${sortProperty}`;
 
-export const getStatesData = async (sortProperty = "stateName") => {
-  const endpoint = `/api/v1/states?sort=${sortProperty}`;
-  
   try {
     const response = await (
       await fetch(endpoint, {
@@ -13,7 +10,7 @@ export const getStatesData = async (sortProperty = "stateName") => {
       })
     ).json();
 
-    const data = response.data.stateWiseList;
+    const data = response.data;
 
     return data;
   } catch (err) {
@@ -22,7 +19,7 @@ export const getStatesData = async (sortProperty = "stateName") => {
 };
 
 export const getHistories = async () => {
-  const endpoint = "/api/v1/history";
+  const endpoint = "https://covindappbackend.herokuapp.com/api/v1/histories";
   try {
     const response = await (
       await fetch(endpoint, {
@@ -30,12 +27,10 @@ export const getHistories = async () => {
       })
     ).json();
 
-    const data = response.data.history;
+    const data = response.data;
 
     return data;
   } catch (err) {
     console.log(err);
   }
 };
-
-

@@ -13,6 +13,8 @@
     <title>Covind</title>
 
     <!-- Custom fonts for this template-->
+
+
     <link
       href="vendor/fontawesome-free/css/all.min.css"
       rel="stylesheet"
@@ -24,18 +26,18 @@
     />
 
     <!-- Custom styles for this template-->
-    <link rel="stylesheet" href="./public/css/sb-admin-2.min.css">
+    <link rel="stylesheet" href="./public/css/sb-admin-2.min.css" />
     <!-- <link href="css/sb-admin-2.min.css" rel="stylesheet" /> -->
 
     <!-- Custom styles for this file -->
     <!-- <link rel="stylesheet" href="styles.css"> -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
 
     <!--font awesome cdn-->
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/8d4b6a7a6b.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
 
     <!-- charts.js cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
@@ -64,23 +66,12 @@
         <!-- Divider -->
         <hr class="sidebar-divider my-0" />
 
-
         <!-- Divider -->
         <hr class="sidebar-divider" />
 
-     
-
-      
-
-       
-
-       
         <!-- Heading -->
-        <div class="sidebar-heading">
-          On this Page
-        </div>
+        <div class="sidebar-heading">On this Page</div>
 
-      
         <!-- Nav Items - Metrics -->
         <li class="nav-item">
           <a class="nav-link" href="#aggregateStats">
@@ -131,15 +122,9 @@
               <i class="fa fa-bars"></i>
             </button>
 
-
             <!-- Topbar Navbar -->
             <ul class="navbar-nav ml-auto">
-             
-
-             
-             
-
-              <div class="  d-sm-block"></div>
+              <div class="d-sm-block"></div>
 
               <!-- Nav Item - User Information -->
               <li class="nav-item dropdown no-arrow">
@@ -152,7 +137,8 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-            <!--here as-->      <span class="mr-2 d-lg-inline text-gray-600 small"
+                  <!--here as-->
+                  <span class="mr-2 d-lg-inline text-gray-600 small"
                     >Sachin Pandey</span
                   >
                   <img
@@ -165,7 +151,11 @@
                   class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                   aria-labelledby="userDropdown"
                 >
-                  <a class="dropdown-item" href="https://github.com/sach0499" target="_blank">
+                  <a
+                    class="dropdown-item"
+                    href="https://github.com/sach0499"
+                    target="_blank"
+                  >
                     <i class="fab fa-github fa-sm fa-fw mr-2 text-primary"></i>
                     Github
                   </a>
@@ -177,165 +167,194 @@
 
           <!-- Begin Page Content -->
           <div class="container-fluid">
-          
-
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4 mt-5" >
-            <h1 class="h3 mb-0 text-gray-800" id ="aggregateStats">Aggregate Stats</h1>
-          </div>
-
-          <div class="row">
-
-            <!-- Active COVID-19 Cases -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Active Cases</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800 activeNumber"></div>
-                    </div>
-                    <div class="col-auto">
-                      <!-- <i class="fas fa-calendar fa-2x text-gray-300"></i> -->
-                      <i class="fas fa-users fa-2x text-primary"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <!-- Page Heading -->
+            <div
+              class="d-sm-flex align-items-center justify-content-between mb-4 mt-5"
+            >
+              <h1 class="h3 mb-0 text-gray-800" id="aggregateStats">
+                Aggregate Stats
+              </h1>
             </div>
 
-            <!-- Recovered COVID-19 Cases -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Cured Cases</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800 curedNumber"></div>
-                    </div>
-                    <div class="col-auto">
-                      <!-- <i class="fas fa-dollar-sign fa-2x text-gray-300"></i> -->
-                      <i class="fas fa-plus-square fa-2x text-success"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Deaths -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-danger shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Deaths</div>
-                      <div class="row no-gutters align-items-center">
-                        <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800 deathNumber"></div>
+            <div class="row">
+              <!-- Active COVID-19 Cases -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-primary text-uppercase mb-1"
+                        >
+                          Active Cases
                         </div>
-                       
+                        <div
+                          class="h5 mb-0 font-weight-bold text-gray-800 activeNumber"
+                        ></div>
+                      </div>
+                      <div class="col-auto">
+                        <!-- <i class="fas fa-calendar fa-2x text-gray-300"></i> -->
+                        <i class="fas fa-users fa-2x text-primary"></i>
                       </div>
                     </div>
-                    <div class="col-auto">
-                      <!-- <i class="fas fa-clipboard-list fa-2x text-gray-300"></i> -->
-                      <i class="fas fa-skull-crossbones fa-2x text-danger"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Recovered COVID-19 Cases -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-success text-uppercase mb-1"
+                        >
+                          Cured Cases
+                        </div>
+                        <div
+                          class="h5 mb-0 font-weight-bold text-gray-800 curedNumber"
+                        ></div>
+                      </div>
+                      <div class="col-auto">
+                        <!-- <i class="fas fa-dollar-sign fa-2x text-gray-300"></i> -->
+                        <i class="fas fa-plus-square fa-2x text-success"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Deaths -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-danger shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-danger text-uppercase mb-1"
+                        >
+                          Deaths
+                        </div>
+                        <div class="row no-gutters align-items-center">
+                          <div class="col-auto">
+                            <div
+                              class="h5 mb-0 mr-3 font-weight-bold text-gray-800 deathNumber"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <!-- <i class="fas fa-clipboard-list fa-2x text-gray-300"></i> -->
+                        <i
+                          class="fas fa-skull-crossbones fa-2x text-danger"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Migrated Covid-19 cases -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-warning shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-warning text-uppercase mb-1"
+                        >
+                          Migrated
+                        </div>
+                        <div
+                          class="h5 mb-0 font-weight-bold text-gray-800 migratedNumber"
+                        ></div>
+                      </div>
+                      <div class="col-auto">
+                        <!-- <i class="fas fa-comments fa-2x text-gray-300"></i> -->
+                        <i class="fas fa-location-arrow fa-2x text-warning"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Migrated Covid-19 cases -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Migrated</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800 migratedNumber"></div>
+            <!-- Charts -->
+
+            <!-- Page Heading -->
+            <h1 class="h3 mb-4 text-gray-800 mt-5" id="charts">Charts</h1>
+
+            <!-- Content Row -->
+            <div class="row">
+              <div class="col-xl-11 col-lg-11 ml-md-3">
+                <!-- Active Cases Chart -->
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      # of Active Covid Cases
+                    </h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="activeCasesChart"></canvas>
                     </div>
-                    <div class="col-auto">
-                      <!-- <i class="fas fa-comments fa-2x text-gray-300"></i> -->
-                      <i class="fas fa-location-arrow fa-2x text-warning"></i>
+                  </div>
+                </div>
+
+                <!-- Cured Cases Chart -->
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-success">
+                      # of Cured Covid Cases
+                    </h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="curedCasesChart"></canvas>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Deceased Cases Chart -->
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-danger">
+                      # of Deceased Covid Cases
+                    </h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="chart-area">
+                      <canvas id="deceasedCasesChart"></canvas>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
+            <!-- Added table here -->
 
-          <!-- Charts -->
+            <div
+              class="d-sm-flex align-items-center justify-content-between mb-4 mt-5"
+            >
+              <h1 class="h3 mb-0 text-gray-800" id="table">State Wise Data</h1>
+            </div>
 
-          <!-- Page Heading -->
-          <h1 class="h3 mb-4 text-gray-800 mt-5" id="charts">Charts</h1>
-         
-
-          <!-- Content Row -->
-          <div class="row">
-
-            <div class="col-xl-11 col-lg-11 ml-md-3">
-
-              <!-- Active Cases Chart -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary"># of Active Covid Cases</h6>
-                </div>
-                <div class="card-body">
-                  <div class="chart-area">
-                    <canvas id="activeCasesChart"></canvas>
-                  </div>
-                
-                </div>
-              </div>
-
-
-               <!-- Cured Cases Chart -->
-               <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-success"># of Cured Covid Cases</h6>
-                </div>
-                <div class="card-body">
-                  <div class="chart-area">
-                    <canvas id="curedCasesChart"></canvas>
-                  </div>
-                
-                </div>
-              </div>
-
-
-
-               <!-- Deceased Cases Chart -->
-               <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-danger"># of Deceased Covid Cases</h6>
-                </div>
-                <div class="card-body">
-                  <div class="chart-area">
-                    <canvas id="deceasedCasesChart"></canvas>
-                  </div>
-                 
-                </div>
-              </div>
-
-           </div>
-       </div>
-
-       <!-- Added table here -->
-
-          <div class="d-sm-flex align-items-center justify-content-between mb-4 mt-5">
-            <h1 class="h3 mb-0 text-gray-800" id ="table">State Wise Data</h1>
-          </div>
-
-
-          
-            <div class= 'sort-div'>
+            <div class="sort-div">
               <label for="sort">Sort the list:</label>
               <select name="sort" id="sort">
-                <option value="stateName" label="Alphabetical Order" selected>Alphabetical Order</option>
-                <option value="-totalCases" label="Active Cases">Active Cases</option>
-                <option value="-totalCured" label="Cured Cases">Cured Cases</option>
-                <option value="-totalDeaths" label="Total Deaths">Total Deaths</option>
+                <option value="stateName" label="Alphabetical Order" selected>
+                  Alphabetical Order
+                </option>
+                <option value="-totalCases" label="Active Cases">
+                  Active Cases
+                </option>
+                <option value="-totalCured" label="Cured Cases">
+                  Cured Cases
+                </option>
+                <option value="-totalDeaths" label="Total Deaths">
+                  Total Deaths
+                </option>
               </select>
             </div>
             <table class="table ml-md-2 mr-md-2">
@@ -349,19 +368,9 @@
                   <th>Total Deaths</th>
                 </tr>
               </thead>
-    
-              <tbody>
-                
-              </tbody>
-            
+
+              <tbody></tbody>
             </table>
-
-
-         
-              
-
-         
-        
           </div>
           <!-- /.container-fluid -->
         </div>
@@ -371,9 +380,24 @@
         <footer class="sticky-footer bg-white">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <div class ="mb-2"><span>Created and Owned by Sachin Pandey.</span></div>
-             <div class ="mb-2"> <span><a href="https://github.com/sach0499/corona-virus-project">Github Link</a>.</span></div>
-              <div class ="mb-2"><span>Data taken from <a href="https://www.mohfw.gov.in/">Ministry of Health and Welfare website</a>. Updated Twice a Day.</span></div>
+              <div class="mb-2">
+                <span>Created and Owned by Sachin Pandey.</span>
+              </div>
+              <div class="mb-2">
+                <span
+                  ><a href="https://github.com/sach0499/corona-virus-project"
+                    >Github Link</a
+                  >.</span
+                >
+              </div>
+              <div class="mb-2">
+                <span
+                  >Data taken from
+                  <a href="https://www.mohfw.gov.in/"
+                    >Ministry of Health and Welfare website</a
+                  >. Updated Twice a Day.</span
+                >
+              </div>
             </div>
           </div>
         </footer>
@@ -387,7 +411,6 @@
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fas fa-angle-up"></i>
     </a>
-
   </body>
 
   <!-- Bootstrap core JavaScript-->
@@ -400,6 +423,6 @@
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
   <!-- Custom script for this page -->
- 
+
   <script src="js/controller.mjs" type="module"></script>
 </html>

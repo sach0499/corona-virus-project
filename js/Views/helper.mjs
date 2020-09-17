@@ -37,9 +37,9 @@ export const processHistories = (histories) => {
 const createRow = (state, serialNo) => {
   const row = `<tr class="row-${serialNo}">
             <th>${serialNo}</th>
-               <th>${state.stateName}</th>
-               <th>${state.activeCases.toLocaleString()}</th>
-               <th>${state.totalCured.toLocaleString()}</th>
+               <th>${state.name}</th>
+               <th>${state.totalActive.toLocaleString()}</th>
+               <th>${state.totalRecovered.toLocaleString()}</th>
              <th>${state.totalDeaths.toLocaleString()}</th>
            </tr>`;
 
@@ -56,7 +56,7 @@ export const createTableBody = (statesData) => {
   } else {
     for (let index = 0; index < 25; index++) {
       html += createRow(
-        { stateName: " ", activeCases: "", totalCured: "", totalDeaths: "" },
+        { name: " ", totalActive: "", totalRecovered: "", totalDeaths: "" },
        ''
       );
     }
