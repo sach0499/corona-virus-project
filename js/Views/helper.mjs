@@ -19,9 +19,9 @@ export const processHistories = (histories) => {
     const label = formatDate(element.createdOn);
     labels[histories.length - index - 1] = label;
     activeCasesList[histories.length - index - 1] =
-      element.data.aggregatedData.activeCases;
+      element.data.aggregatedData.totalActive;
     totalCuredList[histories.length - index - 1] =
-      element.data.aggregatedData.totalCured;
+      element.data.aggregatedData.totalRecovered;
     totalDeathsList[histories.length - index - 1] =
       element.data.aggregatedData.totalDeaths;
   });
