@@ -6,7 +6,6 @@ import * as helper from "./helper.mjs";
 
 export const renderTopStuff = async (history) => {
   try {
-    console.log(history)
     const recentHistory = history.aggregateData;
     // const timeStamp = history.createdOn;
     // domElements.timeStampInfo.innerText = `( last updated on ${timeStamp}. Also includes foreign nationals. )`;
@@ -26,6 +25,7 @@ export const renderGraphs = async (histories) => {
   // key values are in the same array
 
   const data = helper.processHistories(histories);
+
 
   // this is a helper function that draws the area charts
   // parameters to it are the chart canvas id, labels for x-axis

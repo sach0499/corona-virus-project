@@ -173,7 +173,7 @@ export default (id, labels, data, color, tooltip = " ") => {
               drawBorder: false,
             },
             ticks: {
-              maxTicksLimit: 7,
+              maxTicksLimit: 10,
             },
           },
         ],

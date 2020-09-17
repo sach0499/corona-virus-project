@@ -1,10 +1,30 @@
 // helper functions start here
 
 const formatDate = (string) => {
-  const splitArray = string.split(/,/g);
-  const label = splitArray[1].replace(" ", "");
+  // const splitArray = string.split(/-/g);
+  // // const label = splitArray[1].replace(" ", "");
 
-  return label;
+  const date = string.split('-');
+
+  const monthList = [
+
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sept",
+      "Oct",
+      "Nov",
+      "Dec"
+  ]
+
+  string = `${date[0]} ${monthList[parseInt(date[1]) - 1]}`;
+
+  return string;
 };
 
 export const processHistories = (histories) => {
@@ -19,11 +39,11 @@ export const processHistories = (histories) => {
     const label = formatDate(element.createdOn);
     labels[histories.length - index - 1] = label;
     activeCasesList[histories.length - index - 1] =
-      element.data.aggregatedData.totalActive;
+      element.aggregateData.totalActive;
     totalCuredList[histories.length - index - 1] =
-      element.data.aggregatedData.totalRecovered;
+      element.aggregateData.totalRecovered;
     totalDeathsList[histories.length - index - 1] =
-      element.data.aggregatedData.totalDeaths;
+      element.aggregateData.totalDeaths;
   });
 
   return {
