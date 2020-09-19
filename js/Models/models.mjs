@@ -29,7 +29,6 @@ export const getHistories = async () => {
 
     const data = response.data;
 
-    data.reverse();
 
     return data;
   } catch (err) {
