@@ -31,7 +31,7 @@ The data is scraped from the Ministry of Health and Welfare [website](https://ww
 
 1. GET https://covindappbackend.herokuapp.com/api/v1/states
  - Query Parameter: sort. Sorts the array on the basis of following possible values: name, totalActive, totalDeceased, totalRecovered. Substituting a "-" infront of sort parameter sorts in descending order. Default is "-name"
- - Successfull response includes a "success" status and array of state objects as follows:
+ - Successful response includes a "success" status and array of state objects as follows:
         
         {
         totalActive:196,
@@ -43,9 +43,9 @@ The data is scraped from the Ministry of Health and Welfare [website](https://ww
         name:"Andaman and Nicobar Islands"
         }
         
-1. GET https://covindappbackend.herokuapp.com/api/v1/histories
- - Query Parameter: limit. Limit the number of documents to this number. Defalut is 10
- - Successfull response includes a "success" status and array of aggregate objects as follows:
+2. GET https://covindappbackend.herokuapp.com/api/v1/histories
+ - Query Parameter: limit. Limit the number of documents to this number. Default is 10.
+ - Successful response includes a "success" status and array of aggregate objects as follows:
         
         {
           {  
