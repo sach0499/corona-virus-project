@@ -3,7 +3,7 @@ A Project tracking spread of COVID-19 in India.
 
 [Live Demo](https://covind.netlify.app/).
 
-[Backend Repository](https://github.com/sach0499/corona-virus-project-v2)
+[Backend Repository](https://github.com/sach0499/corona-virus-project-v2).
 
 ---
 
